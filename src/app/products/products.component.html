@@ -1,0 +1,26 @@
+<br/>
+<br/>
+<nav>
+    <a class="cart" routerLink="/cart">Shopping Cart</a>
+</nav>
+
+<h2>All Products</h2>
+<ul class= "products">
+    <li class="selected" *ngFor="let product of products">
+      <a class="selectedText" routerLink="/detail/{{product.id}}">
+        {{product.name}}
+      </a>
+      <button class="delete" title="delete product"
+        (click) = "delete(product)">Remove Product</button>
+    </li>
+</ul>
+<div>
+  <a role="button" class="add"
+  href="http://localhost:4200/products/add">Add a
+  product</a>
+</div>
+
+
+
+
+

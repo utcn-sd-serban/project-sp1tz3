@@ -1,0 +1,29 @@
+<h3 style="text-align: left">Your shopping cart</h3>
+<br/>
+  <a class="products" *ngFor="let product of allProducts">
+    {{product.name}}
+  <div>
+    <button class="addToCart" (click)="addProduct(product.id)">Add to cart</button>
+  </div>
+    <br/>
+    <br/>
+  </a>
+<table>
+<a  *ngFor="let id of this.cartService.cart.products">
+  <div>
+    <a class="productsInCart" *ngFor="let product of allProducts">
+      <a *ngIf="product.id===id">
+        {{product.name}},
+        quantity: 
+        {{this.cartService.cart.quantities[this.cartService.cart.products.indexOf(id)]}}
+        <button class="increment" (click)="increment(product.id)">+</button>
+        <button class="decrement" (click)="decrement(product.id)">-</button>
+        <button class="removeProduct" (click)="removeProduct(product.id)">Remove from cart</button>
+      </a>
+    </a>
+  </div>
+</a>
+</table>
+<br/>
+<button class="placeOrder" (click)="placeOrder(); emptyCart()">Place Order</button>
+

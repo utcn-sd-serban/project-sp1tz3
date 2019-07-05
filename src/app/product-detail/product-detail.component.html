@@ -1,0 +1,62 @@
+<div *ngIf="product">
+    <form [formGroup]="productForm" (ngSubmit) = "save()">
+        <div class="field">
+            <p>Name: {{product.name}}</p> 
+            <input type="text" formControlName="name" placeholder={{product.name}} name="name" required>
+        </div>
+        <div class="field">
+          <div>
+            <p>Description: {{product.description}}</p>
+          </div>
+          <input type="text" formControlName="description" placeholder={{product.description}} name="description">
+        </div>
+        <div class="field">
+          <div>
+            <p>Price: {{product.price}}(euro)</p>
+          </div>
+          <input type="number" formControlName="price" placeholder={{product.price}} name="price" required>
+        </div>
+        <div class="field">
+          <div>
+          <p>Weight: {{product.weight}}(kg)</p>
+          </div>
+          <input type="number" formControlName="weight" placeholder={{product.weight}} name="weight" required>
+        </div>
+        <div class="field">
+          <div>
+          <p>Category: {{product.category}}</p>
+          </div>
+          <select [(ngModel)]="product.category" formControlName="category">
+          <option *ngFor="let category of categories" value="{{category.id}}">
+            {{category.name}}
+          </option>
+        </select>
+        </div>
+        <div class="field">
+          <div>
+          <p>Supplier: {{product.supplier}}</p>
+          </div>
+          <select [(ngModel)]="product.supplier" formControlName="supplier">
+            <option *ngFor="let supplier of suppliers" value="{{supplier.id}}">
+              {{supplier.name}}
+            </option>
+          </select>
+        </div>
+        <div class="field">
+          <div>
+          <p>ImageUrl: {{product.imageUrl}}</p>
+          </div>
+          <input type="text" formControlName="imageUrl" placeholder={{product.imageUrl}} name="imageUrl">
+        </div>
+        </form>
+  </div>
+  <br/>
+  <button class="saveButton"(click)="save()">Save</button>
+  <br/>
+  <br/>
+  <button class="backButton" (click)="goBack()">Back</button>
+  
+  
+  
+  
+  
