@@ -1,0 +1,54 @@
+h3{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    color: brown;
+  }
+  
+  .products {
+    text-transform: capitalize;
+    font-size: 25px;
+    color: slateblue;
+  }
+  
+  .addToCart{
+    color: red;
+    background-color:  greenyellow;
+    font-size: 20px;
+  }
+  
+  .productsInCart{
+    text-transform: capitalize;
+    color: yellowgreen;
+    border: salmon;
+    border-top: 5px solid #CCCCCC;
+    border-right: 5px solid #333333;
+    border-bottom: 5px solid #333333;
+    border-left: 5px solid #CCCCCC;
+    font-size: 20px;
+  }
+  
+  .placeOrder{
+    color: Blue;
+    background-color: orange;
+    font-size: 30px;
+  }
+  
+  .increment{
+    background-color: black;
+    color: red;
+    font-size: 18px;
+    position: relative;
+  }
+  
+  .decrement{
+    background-color: black;
+    color: red;
+    font-size: 19px;
+    position: relative;
+  }
+  
+  .removeProduct{
+    background-color: black;
+    color: red;
+    font-size: 18px;
+  }

@@ -1,0 +1,14 @@
+<h2>LOGIN</h2>
+<div>
+  <label>Username:
+    <input #username />
+  </label>
+  <br/>
+  <label>Password:
+    <input #password />
+  </label>
+</div>
+<p>
+  <button (click)="login(username.value, password.value); username.value =''; password.value='';"  *ngIf="!authService.isLoggedIn">Login</button>
+  <button (click)="logout()" *ngIf="authService.isLoggedIn">Logout</button>
+</p>

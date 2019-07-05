@@ -1,0 +1,27 @@
+.field{
+    color: goldenrod;
+  }
+  
+  input{
+    background-color: blueviolet;
+    color: greenyellow;
+    font-size: 15px;
+  }
+  
+  .backButton{
+    color: white;
+    background-color: black;
+    font-size: 30px;
+  }
+  
+  .saveButton{
+    color: yellow;
+    background-color: darkblue;
+    font-size: 30px;
+  }
+  
+  select{
+    color: greenyellow;
+    background-color: blueviolet;
+    font-size: 15px;
+  }

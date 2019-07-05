@@ -1,0 +1,54 @@
+<h5>Add new Product</h5>
+<div class="all">
+  <label class="name">Product name:
+    <input class="namei" #productName type="text"/>
+  </label>
+  <br/>
+  <label class="description">Product description:
+    <input class="namei" #productDescription type="text"/>
+  </label>
+  <br/>
+  <label class="price">Product price:
+    <input class="namei" #productPrice type="number"/>
+  </label>
+  <br/>
+  <label class="weight">Product weight:
+    <input class="namei" #productWeight type="number"/>
+  </label>
+  <br/>
+  <label class="category">Product category:
+    <select class="namei" #productCategory >
+      <option *ngFor="let category of categories" value="{{category.id}}">
+        {{category.name}}
+      </option>
+    </select>
+  </label>
+  <br/>
+  <label class="supplier">Product supplier:
+    <select class="namei" #productSupplier >
+    <option *ngFor="let supplier of suppliers" value="{{supplier.id}}"> 
+      {{supplier.name}}
+    </option>
+  </select>
+  </label>
+  <br/>
+  <label class="imageUrl">Product imageUrl:
+    <input class="namei" #productImageUrl type="text"/>
+  </label>
+  <br/>
+  <button class="addButton" (click)=
+  "add(productName.value,productDescription.value,productPrice.value,productWeight.value,productCategory.value,productSupplier.value,productImageUrl.value);
+  productName.value=''; 
+  productDescription.value='';
+  productPrice.value= '';
+  productWeight.value='';
+  productCategory.value='';
+  productSupplier.value='';
+  productImageUrl.value='';
+  back();
+  ">
+    Add Product
+  </button>
+  <br/>
+  <br/>
+  <button class="backButton"(click)="back()">Go Back</button>

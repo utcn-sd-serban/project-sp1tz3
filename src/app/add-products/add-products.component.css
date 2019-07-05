@@ -1,0 +1,71 @@
+
+h5{
+    font-size: 30px;
+    color: blueviolet;
+}
+.all .name{
+    background-color: greenyellow; 
+    display: inline;
+    color: red;
+    font-size: 20px;
+}
+
+.all .description{
+    background-color: greenyellow; 
+    display: inline;
+    color: red;
+    font-size: 20px;
+}
+
+.all .price{
+    background-color: greenyellow; 
+    display: inline;
+    color: red;
+    font-size: 20px;
+}
+.all .weight{
+    background-color: greenyellow; 
+    display: inline;
+    color: red;
+    font-size: 20px;
+}
+.all .category{
+    background-color: greenyellow; 
+    display: inline;
+    color: red;
+    font-size: 20px;
+}
+.all .supplier{
+    background-color: greenyellow; 
+    display: inline;
+    color: red;
+    font-size: 20px;
+}
+.all .imageUrl{
+    background-color: greenyellow; 
+    display: inline;
+    color: red;
+    font-size: 20px;
+}
+
+.all .namei{
+    background-color: aqua;
+    position: relative;
+    right:0px;
+    top:-2px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    color: red;
+}
+
+.addButton{
+    background-color: gold;
+    height: 50px;
+    width: 15em;
+    font-size: 20px;
+}
+
+.backButton{
+    background-color: black;
+    color: white;
+}
